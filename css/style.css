@@ -1,0 +1,712 @@
+@import url("https://fonts.googleapis.com/css?family=Rambla:400,400i,700,700i&display=swap");
+
+/* 1. Geral */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 50%;
+}
+
+::selection {
+    color: #1c1c1c;
+    background-color: #b1c149;
+}
+
+body {
+    background-color: #111;
+    font-family: "Rambla", sans-serif;
+    font-size: 1.6rem;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    color: #888;
+}
+
+a {
+    color: #b1c149;
+}
+
+a:hover {
+    color: #e8ff4b;
+    text-decoration: none;
+}
+
+
+h6 {
+    font-size: 18px;
+}
+
+/* 2. Imagem no Topo */
+.logotop {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo-container .logotop .image {
+    width: 15%;
+    height: auto;
+}
+
+/* 3. Cabeçalho */
+.main-header {
+    background-color: #1d1d1d;
+    margin-top: 10px;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 20px 20px 0 0;
+}
+
+.main-header .container {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b1c149;
+    font-size: 2.1rem;
+    margin: 5px 0 0 0;
+    padding: 24px 40px;
+    padding-bottom: 28px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e8ff4b;
+    color: #1c1c1c;
+    transition: 0.3s;
+}
+
+/* 4. Conteúdo */
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.dark-section {
+    background: #ffffff;
+}
+
+.dark-section {
+    background: #111;
+    border-top: 1px solid rgba(153, 153, 153, 0.11);
+    border-bottom: 1px solid rgba(153, 153, 153, 0.11);
+}
+
+.m-15px-tb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about-me-img {
+    position: relative;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.about-me-img:after,
+.about-me-img:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    color: #e8ff4b;
+    position: absolute;
+}
+
+.about-me-img:after {
+    top: 0;
+    left: 0;
+    border-top: 4px solid currentColor;
+    border-left: 4px solid currentColor;
+}
+
+.about-me-img:before {
+    right: 0;
+    bottom: 0;
+    border-bottom: 4px solid currentColor;
+    border-right: 4px solid currentColor;
+}
+
+.about-me {
+    position: relative;
+    z-index: 1;
+    padding-left: 40px;
+}
+
+.about-me:after,
+.about-me:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #e8ff4b;
+    opacity: 0.1;
+    z-index: 0;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.about-me:after {
+    top: -10px;
+    right: -70px;
+}
+
+.about-me:before {
+    bottom: 10px;
+    left: -10px;
+}
+
+.about-me .list {
+    margin: 0;
+    padding: 20px;
+    border-radius: 3px;
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.08);
+    z-index: 1;
+}
+
+.about-me .list {
+    background: #1d1d1d;
+}
+
+.about-me .list li {
+    text-transform: uppercase;
+    padding: 7px 0;
+}
+
+.about-me .list li h6 {
+    font-size: 13px;
+    flex: 0 0 130px;
+    max-width: 130px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.about-me .list li h6 span {
+    display: inline-block;
+    vertical-align: top;
+    background: #b1c149;
+    color: #3c3c3c;
+    padding: 6px 10px;
+}
+
+.about-me .list li p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.section-title h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 15px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 1;
+    padding: 0 0 15px;
+}
+
+.section-title h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 2px;
+    z-index: -1;
+    background: #e8ff4b;
+    width: 50px;
+}
+
+.text-center .section-title h3:after {
+    right: 0;
+}
+
+.section-title p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.m-25px-b {
+    margin-bottom: 25px;
+}
+
+.dark-color {
+    color: #ffffff;
+}
+
+/* 5. Hobbies */
+.feature-box-1 {
+    text-align: center;
+    position: relative;
+    top: 0;
+    padding: 30px 20px;
+    border: 1px solid #eee;
+    background: #1d1d1d;
+    border-color: #090a0c;
+    transition: ease all 0.35s;
+}
+
+.feature-box-1::after,
+.feature-box-1:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    color: #e8ff4b;
+    position: absolute;
+    transition: ease all 0.35s;
+}
+
+.feature-box-1:after {
+    top: 0;
+    left: 0;
+    border-top: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+}
+
+.feature-box-1:before {
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+}
+
+.feature-box-1:hover {
+    box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+    top: -10px;
+}
+
+.feature-box-1:hover:after,
+.feature-box-1:hover:before {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-box-1 .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    background: #b1c149;
+    color: #1c1c1c;
+    font-weight: 600;
+    line-height: 70px;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.09), 0 8px 17px 0 rgba(0, 0, 0, 0.08);
+}
+
+.feature-box-1 .icon:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    height: 22px;
+    width: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: currentColor;
+}
+
+.feature-box-1 h5 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.imagebg {
+    width: 100%;
+    height: 40%;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+/* 6. Educação */
+.sm-m-25px-b {
+    margin-bottom: 25px;
+}
+
+.m-35px-b {
+    margin-bottom: 35px;
+}
+
+.m-15px-tb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.feature-box-2 {
+    position: relative;
+    top: 0;
+    padding: 30px 60px 30px 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.08);
+    background: #1d1d1d;
+    border-color: #090a0c;
+    transition: ease all 0.35s;
+}
+
+.feature-box-2:after,
+.feature-box-2:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    color: #e8ff4b;
+    position: absolute;
+    transition: ease all 0.35s;
+}
+
+.feature-box-2:after {
+    top: 0;
+    left: 0;
+    border-top: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+}
+
+.feature-box-2:before {
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+}
+
+.feature-box-2:hover {
+    box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+    top: -10px;
+}
+
+.feature-box-2:hover:after,
+.feature-box-2:hover:before {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-box-2 .icon {
+    background: #b1c149;
+    color: #1c1c1c;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 21px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.09), 0 8px 17px 0 rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.feature-box-2 h6 {
+    display: inline-block;
+    vertical-align: top;
+    background: #b1c149;
+    color: #1c1c1c;
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.feature-box-2 h5 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #090a0c;
+    margin: 0 0 15px;
+}
+
+.feature-box-2 h5 {
+    color: #ffffff;
+}
+
+.feature-box-2 p {
+    margin: 0;
+}
+
+/* 7. Rodapé  */
+.footer {
+    padding: 12px 0;
+    background: #111;
+    position: relative;
+    border-top: 1px solid rgba(153, 153, 153, 0.11);
+}
+
+.footer .nav a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 17px;
+}
+
+.footer .nav a:hover {
+    color: #ffffff;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    margin: 0;
+}
+
+/* 8. Historia */
+.sm-title h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    padding-left: 20px;
+    margin: 0 0 15px;
+}
+
+.sm-title h6:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 4px;
+    background: #e8ff4b;
+}
+
+.sm-title p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.about-me-img2 {
+    position: relative;
+    padding: 15px;
+    width: 90vh;
+    height: 100%;
+}
+
+.about-me img {
+
+}
+
+.about-me-img2:after,
+.about-me-img2:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    color: #e8ff4b;
+    position: absolute;
+}
+
+.about-me-img2:after {
+    top: 0;
+    left: 0;
+    border-top: 4px solid currentColor;
+    border-left: 4px solid currentColor;
+}
+
+.about-me-img2:before {
+    right: 0;
+    bottom: 0;
+    border-bottom: 4px solid currentColor;
+    border-right: 4px solid currentColor;
+}
+
+/* Responsividade básica */
+@media(max-width: 1400px) {
+    html {
+        font-size: 40%;
+    }
+
+    nav ul li a {
+        padding: 28px 40px;
+    }
+
+    .main-header {
+        margin-left: 420px;
+        margin-right: 420px;
+    }
+}
+
+@media(max-width:1300px) {
+    html {
+        font-size: 33%;
+    }
+
+    .main-header .container {
+        height: 60px;
+    }
+
+    nav ul li a {
+        padding: 24px 40px;
+    }
+
+    .main-header {
+        margin-left: 370px;
+        margin-right: 370px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .md-m-20px-b {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 1100px) {
+    html {
+        font-size: 33%;
+    }
+
+    .main-header .container {
+        height: 50px;
+    }
+
+    nav ul li a {
+        padding: 21px 40px;
+    }
+
+    .main-header {
+        margin-left: 320px;
+        margin-right: 320px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .about-me {
+        padding-left: 0;
+    }
+
+    .md-m-50px-t {
+        margin-top: 50px;
+      }
+}
+
+@media(max-width: 964px) {
+    html {
+        font-size: 30%;
+    }
+
+    .main-header .container {
+        height: 40px;
+    }
+
+    nav ul li a {
+        padding: 15px 40px;
+    }
+
+    .main-header {
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+}
+
+@media(max-width: 809px) {
+    html {
+        font-size: 30%;
+    }
+
+    nav ul li a {
+        padding: 16px 40px;
+    }
+
+    .main-header {
+        margin-left: 170px;
+        margin-right: 170px;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 25%;
+    }
+
+    .main-header .container {
+        height: 30px;
+    }
+
+    nav ul li a {
+        padding: 13px 20px;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 15%;
+    }
+
+    .main-header .container {
+        height: 25px;
+    }
+
+    nav ul li a {
+        padding: 13px 15px;
+    }
+}
+
+@media(max-width: 485px) {
+    html {
+        font-size: 18%;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+    }
+
+    .main-header {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
